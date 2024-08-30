@@ -1,0 +1,23 @@
+import tkinter
+from tkinter import messagebox
+def tyrant():
+    login.get()
+    username = login.get()
+    password = login2.get()
+    print(username, password)
+    
+
+window = tkinter.Tk()
+button = tkinter.Button(window, command= tyrant, text= 'login')
+login = tkinter.Entry(window)
+login2= tkinter.Entry(window)
+label = tkinter.Label(window,text= 'username')
+label2= tkinter.Label(window, text= 'password')
+label2.place(x=300, y= 180)
+login2.place(x=300, y=200)
+label.place(x=300,y=80)
+login.place(x=300,y=100)
+button.place(x=300, y=250)
+window.mainloop()
+
+

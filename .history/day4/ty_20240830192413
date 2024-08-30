@@ -1,0 +1,14 @@
+import tkinter
+from tkinter import messagebox
+def tyrant():
+    messagebox.showinfo("hello", "hello")
+    
+
+window = tkinter.Tk()
+button = tkinter.Button(window, command= tyrant, text= '')
+login = tkinter.Entry(window)
+
+button.place(x= 0, y=0)
+window.mainloop()
+
+
